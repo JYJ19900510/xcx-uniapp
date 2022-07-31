@@ -1,6 +1,29 @@
 {
   "pages": [
-    "pages/index/index"
+	  {
+	  			"path": "pages/home/home",
+	  			"style": {
+	  				
+	  			}
+	  		},
+	  		{
+	  			"path": "pages/cate/cate",
+	  			"style": {
+	  				
+	  			}
+	  		},
+	  		{
+	  			"path": "pages/cart/cart",
+	  			"style": {
+	  				
+	  			}
+	  		},
+	  		{
+	  			"path": "pages/my/my",
+	  			"style": {
+	  				
+	  			}
+	  		}
   ],
   "subPackages": [],
   "window": {
