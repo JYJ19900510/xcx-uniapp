@@ -1,8 +1,5 @@
 <<<<<<< HEAD
 #忽略下面的文件
 /uni_modules
-=======
-#忽略 node_modules目录
 /node_modules
->>>>>>> 3b98f19a9c8c7e6f3972640a0a85c5769f0fbcda
 /unpackage/dist
