@@ -9,6 +9,8 @@ App.mpType = 'app'
 const app = new Vue({
 	...App
 })
+// 引入icont样式
+import "./style/index.css"
 // 按需导入 $http 对象
 import {
 	$http
