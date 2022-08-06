@@ -1,30 +1,32 @@
 <template>
-	<view class="scroll-container">
-		<!-- 左侧滚动区域 -->
-		<scroll-view scroll-y="true" class="scroll-container-left" style="height: 600px;" >
-				<view v-for="(item,index) in Categories" :key="item.cat_id" :class="['cate_name', index===Index ? 'add_bdL':'']" @click="addClassName(index)">
-					{{item.cat_name}}
-				</view> 
-		</scroll-view>
-		<!-- 右侧滚动区域 -->
-		<scroll-view scroll-y="true" class="scroll-container-right" style="height:600px;">
-			<view class="box" v-for="i in CategoriesSecond" :key="i.cat_id">
-				<view class="box_title">
-					<!-- /{{i.cat_name}}/ -->
-					{{i}}
-				</view>
-				<view class="box_content" >
-					<view class="box_1" v-for="n in i.children" :key="n.cat_id">
-						<navigator :url="'/subpkg/goods_detail/goods_detail?goods_id='+n.cat_id">
-							<image :src="n.cat_icon" mode="widthFix"></image>
-						</navigator>
-						<view class="">
-							{{n.cat_name}}
+	<view>
+		<search></search>
+		<view class="scroll-container">
+			<!-- 左侧滚动区域 -->
+			<scroll-view scroll-y="true" class="scroll-container-left" style="height: 600px;" >
+					<view v-for="(item,index) in Categories" :key="item.cat_id" :class="['cate_name', index===Index ? 'add_bdL':'']" @click="addClassName(index)">
+						{{item.cat_name}}
+					</view> 
+			</scroll-view>
+			<!-- 右侧滚动区域 -->
+			<scroll-view scroll-y="true" class="scroll-container-right" style="height:600px;">
+				<view class="box" v-for="i in CategoriesSecond" :key="i.cat_id">
+					<view class="box_title">
+						/{{i.cat_name}}/s
+					</view>
+					<view class="box_content" >
+						<view class="box_1" v-for="n in i.children" :key="n.cat_id">
+							<navigator :url="'/subpkg/goods_detail/goods_detail?goods_id='+n.cat_id">
+								<image :src="n.cat_icon" mode="widthFix"></image>
+							</navigator>
+							<view class="">
+								{{n.cat_name}}
+							</view>
 						</view>
 					</view>
 				</view>
-			</view>
-		</scroll-view>
+			</scroll-view>
+		</view>
 	</view>
 </template>
 

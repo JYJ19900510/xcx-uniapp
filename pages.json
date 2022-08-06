@@ -24,28 +24,23 @@
 			}
 		}
 	],
-	"subPackages": [
-		 {
-			 "root": "subpkg",
-			 "pages": [
-			 	{
-					"path": "goods_detail/goods_detail",
-					"style": {
-						
-					}
-				}
-			     ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-		 }
-	],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+			{
+				"path": "goods_detail/goods_detail",
+				"style": {}
+			     },
+			{
+				"path": "goods_list/goods_list",
+				"style": {}
+			},
+			{
+				"path": "search/search",
+				"style": {}
+			}
+		]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "商品优购",

@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<search></search>
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
 			<swiper-item v-for="item in swiperList" :key="item.goods_id">
 				<view class="swiper-item">
