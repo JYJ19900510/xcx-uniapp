@@ -86,6 +86,7 @@
 					pagenum,
 					pagesize
 				} = this.queryObj
+				// 节流操作
 				 clearTimeout(this.timerId)
 				 this.timerId = setTimeout(()=>{
 				 	 this.getSearch(this.queryObj)
